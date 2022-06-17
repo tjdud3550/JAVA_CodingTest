@@ -21,15 +21,7 @@ public class Inflearn03_03 {
 	public static void main(String[] args) {
 		Inflearn03_03 T = new Inflearn03_03();
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
-		int k =scanner.nextInt();
-		int [] arr = new int[n];
-		for(int i = 0; i< n; i++) {
-			arr[i] = scanner.nextInt();
-			
-		}
-		System.out.print(T.solution(n,k,arr));
-	
+
 
 }
 	
