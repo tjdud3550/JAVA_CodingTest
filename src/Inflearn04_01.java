@@ -23,13 +23,7 @@ public class Inflearn04_01 {
 			}
 		
 		}
-		
-		
-		
-		
-		
-		
-		
+			
 		return answer;
 	}
 
