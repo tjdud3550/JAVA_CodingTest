@@ -3,39 +3,51 @@ import java.util.*;
 
 
 public class test01 {
-	
-	public ArrayList<Integer> solution(int n, int []arr) {
+	public String solution(int n, int m, String str1, String str2) {
+		String answer = "Yes";
 		
-		int max = 0, cnt = 0;
-		ArrayList<Integer> answer = new ArrayList<>();
-		for(int i = 1; i <=n; i++) {
-			max = 0;
-			for(int j = i+1; j<=n-1; j++) {
-			if(arr[i]<arr[i+1]) {
-				cnt ++;
-				max = arr[i];
+		Stack<Integer> stack1 = new Stack<>();
+		Stack<Integer> stack2 = new Stack<>();
+		for (char x: str1.toCharArray()) {
+			if(Character.isDigit(x)) {
+				stack1.push(x-48); 
 				
 			}
-			}
-			answer.add(cnt);
-		}
-		
-			return answer;
-		
-	}
-
-	public static void main(String[] args) {
-		test01 T = new test01();
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int []arr = new int[n+1]	;
-		for (int i = 1 ; i<=n; i++) {
-			arr[i] = sc.nextInt(); //점수 입력하기
+			return stack1;
 			
+			/**
+			for (char x: str2.toCharArray()) {
+				if(Character.isDigit(x)) {
+					stack2.push(x-48); 
+				}	
+			}
+			**/
+			
+			
+		
+		
+		
+			
+		//return answer;
+
+	}
+	public static void main(String[] args) {
+		test01 t = new test01();
+		Scanner sc = new Scanner(System.in);	
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		for(int i =0; i<m; i++) {
+			String str1 = sc.next();
+		}
+		for(int i = 0; i<n-m;i++) {
+			String str2 = sc.next();
 		}
 		
+				
+		//System.out.println(t.solution(n,m,str1, str2));
+		}
 		
-		System.out.print(T.solution(n, arr));
+
 	}
 
-}
+

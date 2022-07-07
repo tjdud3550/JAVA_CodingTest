@@ -6,7 +6,7 @@ class Inflearn03_04 {
 			sum+=arr[rt];
 			if(sum==m) answer++;
 			while(sum>=m){
-				sum-=arr[lt++];
+				sum-=arr[i];
 				if(sum==m) answer++; 
 			}
 		}

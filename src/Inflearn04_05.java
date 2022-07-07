@@ -51,5 +51,4 @@ public class Inflearn04_05 {
 		System.out.println(T.solution(n, k, arr));
 
 	}
-
 }
