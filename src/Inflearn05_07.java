@@ -1,6 +1,3 @@
-
-
-
 import java.util.*;
 class Inflearn05_07 {	
 	public String solution(String need, String plan){

@@ -13,8 +13,9 @@ class Main {
 			int len=Q.size();
 			for(int i=0; i<len; i++){
 				int x = Q.poll();
+				if(x==e) return L;
 				for(int j=0; j<3; j++){
-					int nx=x+dis[j];
+					int nx=x+dis[j]; //자식노드
 					if(nx==e){
 						return L+1;
 					}
